@@ -22,5 +22,10 @@ Với mỗi phương pháp, hãy tìm hiểu:
 Tên gọi: Phương pháp này được đặt tên theo hoàng đế Julius Caesar, người đã sử dụng nó để gửi thư tín.
 
 Thuật toán mã hoá: thay thế mỗi chữ cái trong văn bản gốc bằng một chữ cái khác cách nó một số vị trí cố định trong bảng chữ cái. 
+Công thức: Ci = (Pi + ki mod m) mod 26
+Ci: Ký tự mã hóa ở vị trí thứ i trong văn bản mã hóa.)
+Pi: Ký tự cần mã hóa ở vị trí thứ i trong văn bản gốc.)
+ki: Khóa hoặc "chìa khóa" sử dụng để mã hóa.)
+m: Một giá trị hằng số (thường là kích thước của bảng mã hoặc tập hợp các ký tự có thể được mã hóa).
 
 Thuật toán giải mã:
