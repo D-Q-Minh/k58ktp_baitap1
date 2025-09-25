@@ -17,4 +17,10 @@ Với mỗi phương pháp, hãy tìm hiểu:
 5. Cài đặt thuật toán mã hoá và giải mã bằng code C++ và bằng html+css+javascript
 
 #### Bài làm:
+##### 1. Caesar
 ######
+Tên gọi: Phương pháp này được đặt tên theo hoàng đế Julius Caesar, người đã sử dụng nó để gửi thư tín.
+
+Thuật toán mã hoá: thay thế mỗi chữ cái trong văn bản gốc bằng một chữ cái khác cách nó một số vị trí cố định trong bảng chữ cái. 
+
+Thuật toán giải mã:
