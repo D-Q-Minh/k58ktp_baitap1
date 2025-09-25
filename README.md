@@ -17,15 +17,36 @@ Với mỗi phương pháp, hãy tìm hiểu:
 5. Cài đặt thuật toán mã hoá và giải mã bằng code C++ và bằng html+css+javascript
 
 #### Bài làm:
-##### 1. Caesar
+#### 1. Caesar
 ######
-Tên gọi: Phương pháp này được đặt tên theo hoàng đế Julius Caesar, người đã sử dụng nó để gửi thư tín.
+1.1 Tên gọi: Phương pháp này được đặt tên theo hoàng đế Julius Caesar, người đã sử dụng nó để gửi thư tín.
 
-Thuật toán mã hoá: thay thế mỗi chữ cái trong văn bản gốc bằng một chữ cái khác cách nó một số vị trí cố định trong bảng chữ cái. 
-Công thức: Ci = (Pi + ki mod m) mod 26
-Ci: Ký tự mã hóa ở vị trí thứ i trong văn bản mã hóa.)
-Pi: Ký tự cần mã hóa ở vị trí thứ i trong văn bản gốc.)
-ki: Khóa hoặc "chìa khóa" sử dụng để mã hóa.)
-m: Một giá trị hằng số (thường là kích thước của bảng mã hoặc tập hợp các ký tự có thể được mã hóa).
+###### 1.2 Thuật toán mã hoá: thay thế mỗi chữ cái trong văn bản gốc bằng một chữ cái khác cách nó một số vị trí cố định trong bảng chữ cái. 
+###### Công thức: Ci = (Pi + ki mod m) mod 26
+###### Ci: Ký tự mã hóa ở vị trí thứ i trong văn bản mã hóa.)
+###### Pi: Ký tự cần mã hóa ở vị trí thứ i trong văn bản gốc.)
+###### ki: Khóa hoặc "chìa khóa" sử dụng để mã hóa.)
+###### m: Một giá trị hằng số (thường là kích thước của bảng mã hoặc tập hợp các ký tự có thể được mã hóa).
+###### mod26 đảm bảo kết quả luôn nằm trong phạm vi từ 0 đến 25 (vì bảng chữ cái tiếng Anh có 26 chữ cái).
 
-Thuật toán giải mã:
+###### Thuật toán giải mã:
+###### Công thức: Pi = (Ci - ki mod m) mod 26
+######
+
+###### 1.3 Không gian khoá: 26 chữ cái, chỉ có 25 khóa dịch chuyển khả thi (khóa 26 tương đương khóa 0, không mã hóa).
+
+###### 1.4 Cách phá mã: 
+###### - tấn công vét cạn (Brute Force Attack): Kẻ tấn công có thể dễ dàng thử lần lượt tất cả 25 khóa có thể xảy ra và chọn kết quả giải mã có nghĩa
+###### - Phân tích tần suất (Frequency Analysis): Vì mỗi chữ cái luôn được mã hóa thành cùng một chữ cái mã hóa, kẻ tấn công có thể phân tích tần suất xuất hiện của các chữ cái trong bản mã để suy ra khóa.
+
+###### 1.5 Thuật toán mã hoá và giải mã
+###### C++:
+###### mã hoá:
+###### giải mã:
+
+###### html+css+javascript:
+###### mã hoá:
+###### giải mã:
+
+#### 2. Affine
+###### 
