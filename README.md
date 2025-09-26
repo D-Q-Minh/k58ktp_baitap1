@@ -49,4 +49,78 @@ Với mỗi phương pháp, hãy tìm hiểu:
 ###### giải mã:
 
 #### 2. Affine
-###### 
+###### 2.1
+###### 2.2 Thuật toán mã hoá:
+###### Công thức: 
+###### Thuật toán giải mã:
+###### Công thức:
+###### 2.3 Không gian khoá:
+
+###### 2.4 Cách phá mã:
+
+###### 2.5 Thuật toán mã hoá và giải mã
+###### C++:
+###### mã hoá:
+###### giải mã:
+
+###### html+css+javascript:
+###### mã hoá:
+###### giải mã:
+
+#### 3. Hoán vị
+###### 3.1
+###### 3.2 Thuật toán mã hoá:
+###### Công thức: 
+###### Thuật toán giải mã:
+###### Công thức:
+###### 3.3 Không gian khoá:
+
+###### 3.4 Cách phá mã:
+
+###### 3.5 Thuật toán mã hoá và giải mã
+###### C++:
+###### mã hoá:
+###### giải mã:
+
+###### html+css+javascript:
+###### mã hoá:
+###### giải mã:
+
+#### 4. Vigenère
+###### 4.1
+###### 4.2 Thuật toán mã hoá:
+###### Công thức: 
+###### Thuật toán giải mã:
+###### Công thức:
+###### 4.3 Không gian khoá:
+
+###### 4.4 Cách phá mã:
+
+###### 4.5 Thuật toán mã hoá và giải mã
+###### C++:
+###### mã hoá:
+###### giải mã:
+
+###### html+css+javascript:
+###### mã hoá:
+###### giải mã:
+
+#### 5. Playfair
+###### 5.1
+###### 5.2 Thuật toán mã hoá:
+###### Công thức: 
+###### Thuật toán giải mã:
+###### Công thức:
+###### 5.3 Không gian khoá:
+
+###### 5.4 Cách phá mã:
+
+###### 5.5 Thuật toán mã hoá và giải mã
+###### C++:
+###### mã hoá:
+###### giải mã:
+
+###### html+css+javascript:
+###### mã hoá:
+###### giải mã:
+
