@@ -73,6 +73,14 @@ a⋅a −1 ≡1(modm)
 ###### số khoá = (số giá trị a) * (số giá trị b)=12×26=312
 
 ###### 2.4 Cách phá mã:
+###### - Tấn công Vét cạn (Brute-Force Attack):
+###### Vì chỉ có 312 khóa có thể, kẻ tấn công có thể thử tất cả các khóa hợp lệ K=(a,b):
+###### Thử lần lượt 12 giá trị a hợp lệ và 26 giá trị b hợp lệ.
+###### Với mỗi cặp (a,b), sử dụng công thức giải mã để giải mã bản mã.
+###### Kiểm tra bản rõ thu được. Bản rõ chính xác là bản rõ có ý nghĩa.
+
+###### - Phân tích Tần suất (Frequency Analysis):
+
 
 ###### 2.5 Thuật toán mã hoá và giải mã
 ###### C++:
