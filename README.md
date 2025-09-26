@@ -80,7 +80,14 @@ a⋅a −1 ≡1(modm)
 ###### Kiểm tra bản rõ thu được. Bản rõ chính xác là bản rõ có ý nghĩa.
 
 ###### - Phân tích Tần suất (Frequency Analysis):
-
+###### + Tính tần suất: Đếm tần suất xuất hiện của từng ký tự trong bản mã.
+###### + Phỏng đoán: Dựa vào tần suất chuẩn của ngôn ngữ (ví dụ: trong tiếng Anh, ký tự 'E' là phổ biến nhất), phỏng đoán một hoặc hai cặp ký tự bản rõ-bản mã:
+###### + Lập hệ phương trình: Với hai cặp phỏng đoán (x1, y1) và (x2, y2), ta có hệ hai phương trình đồng dư:
+######   ax1 + b≡y1 (mod26)
+######   ax2 + b≡y2 (mod26)
+​###### + Giải hệ phương trình: Trừ hai phương trình để tìm a:
+######   a(x1−x2)≡(y1−y2) (mod26)
+###### + Kiểm tra: Nếu khóa (a,b) tìm được thỏa mãn ƯCLN(a,26)=1, ta dùng nó để giải mã toàn bộ bản mã. Nếu bản rõ thu được có ý nghĩa, khóa đã tìm được là chính xác.
 
 ###### 2.5 Thuật toán mã hoá và giải mã
 ###### C++:
