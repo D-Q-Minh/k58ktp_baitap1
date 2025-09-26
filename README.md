@@ -51,9 +51,17 @@ Với mỗi phương pháp, hãy tìm hiểu:
 #### 2. Affine
 ###### 2.1
 ###### 2.2 Thuật toán mã hoá:
-###### Công thức: 
+###### Công thức: E(x)=(a^x+b)(mod m)
+###### x: Giá trị số của chữ cái bản rõ.
+###### y: Giá trị số của chữ cái bản mã.
+###### a,b: Các thành phần của khóa.
+###### m: Kích thước bảng chữ cái (26).
+
 ###### Thuật toán giải mã:
-###### Công thức:
+###### Công thức: D(y)= a^−1*(y−b)(mod m)
+###### a ^−1 (a inverse) là nghịch đảo nhân mô-đun của a(modm), tức là số thỏa mãn điều kiện:
+
+a⋅a −1 ≡1(modm)
 ###### 2.3 Không gian khoá:
 
 ###### 2.4 Cách phá mã:
