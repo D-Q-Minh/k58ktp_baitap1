@@ -63,12 +63,13 @@ Với mỗi phương pháp, hãy tìm hiểu:
 
 a⋅a −1 ≡1(modm)
 ###### 2.3 Không gian khoá:
+###### Khóa K là một cặp số nguyên K=(a,b), thỏa mãn các điều kiện:
+###### a và m (kích thước bảng chữ cái, m=26 đối với bảng chữ cái tiếng Anh) phải là hai số nguyên tố cùng nhau, tức là ƯCLN(a,m)=1.
+###### b là số nguyên bất kỳ, thường được chọn trong khoảng 0≤b<m.
+
 ###### Không gian khóa là tổng số các khóa hợp lệ K=(a,b). Với m=26:
-
 ###### Giá trị a hợp lệ: Các số nguyên tố cùng nhau với 26 và nhỏ hơn 26. Đó là {1,3,5,7,9,11,15,17,19,21,23,25}. Có tổng cộng 12 giá trị a hợp lệ.
-
 ###### Giá trị b hợp lệ: Bất kỳ giá trị nào trong khoảng 0≤b<26. Có tổng cộng 26 giá trị b hợp lệ.
-
 ###### Tổng số khóa hợp lệ là:
 ###### số khoá = (số giá trị a) * (số giá trị b)=12×26=312
 
@@ -102,9 +103,20 @@ a⋅a −1 ≡1(modm)
 ###### 3.1
 ###### 3.2 Thuật toán mã hoá:
 ###### Công thức: 
+###### - Viết bản rõ: Viết bản rõ (plaintext) thành các hàng trong một ma trận, với số cột bằng độ dài của từ khóa.
+###### - Sắp xếp cột: Ghi từ khóa lên trên các cột.
+###### - Đọc bản mã: Đọc các ký tự theo cột, theo thứ tự số thứ tự của từ khóa (từ nhỏ đến lớn).
+
 ###### Thuật toán giải mã:
 ###### Công thức:
+###### Xác định kích thước ma trận: Tính số hàng của ma trận bằng cách chia độ dài bản mã cho độ dài khóa (L/len(K)).
+###### Viết bản mã: Viết bản mã vào ma trận theo cột, theo đúng thứ tự đã đọc (từ 1 đến n).
+###### Đọc bản rõ: Đọc lại các ký tự theo hàng (từ trái qua phải, từ trên xuống dưới) theo thứ tự cột ban đầu để khôi phục bản rõ.
+
+#################################################################################
 ###### 3.3 Không gian khoá:
+###### Khóa K là một từ khóa (keyword) hoặc một dãy số, xác định thứ tự sắp xếp các cột.
+######
 
 ###### 3.4 Cách phá mã:
 
