@@ -51,18 +51,26 @@ Với mỗi phương pháp, hãy tìm hiểu:
 #### 2. Affine
 ###### 2.1
 ###### 2.2 Thuật toán mã hoá:
-###### Công thức: E(x)=(a^x+b)(mod m)
+###### Công thức: y=E(x)=(a*x+b)modm
 ###### x: Giá trị số của chữ cái bản rõ.
 ###### y: Giá trị số của chữ cái bản mã.
 ###### a,b: Các thành phần của khóa.
 ###### m: Kích thước bảng chữ cái (26).
 
 ###### Thuật toán giải mã:
-###### Công thức: D(y)= a^−1*(y−b)(mod m)
+###### Công thức: x=D(y)=a^−1*(y−b)modm
 ###### a ^−1 (a inverse) là nghịch đảo nhân mô-đun của a(modm), tức là số thỏa mãn điều kiện:
 
 a⋅a −1 ≡1(modm)
 ###### 2.3 Không gian khoá:
+###### Không gian khóa là tổng số các khóa hợp lệ K=(a,b). Với m=26:
+
+###### Giá trị a hợp lệ: Các số nguyên tố cùng nhau với 26 và nhỏ hơn 26. Đó là {1,3,5,7,9,11,15,17,19,21,23,25}. Có tổng cộng 12 giá trị a hợp lệ.
+
+###### Giá trị b hợp lệ: Bất kỳ giá trị nào trong khoảng 0≤b<26. Có tổng cộng 26 giá trị b hợp lệ.
+
+###### Tổng số khóa hợp lệ là:
+###### số khoá = (số giá trị a) * (số giá trị b)=12×26=312
 
 ###### 2.4 Cách phá mã:
 
