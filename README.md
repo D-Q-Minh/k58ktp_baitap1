@@ -170,7 +170,13 @@ tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax 
   + So sánh: Tính IoC cho mỗi chuỗi con đó.
      Nếu IoC của các chuỗi con gần với IoC của ngôn ngữ bản rõ (ví dụ: IoC tiếng Anh ≈0.067), thì độ dài m đó có khả năng là độ dài khóa chính xác.
      Nếu IoC gần với IoC của phân bố đồng nhất (≈0.038), thì độ dài m là không chính xác.
-
+    
+ - Bước 2: Tìm Khóa
+   Sau khi xác định m
+   1. Tách chuỗi con: Chia bản mã thành m chuỗi con C1,C2,…,Cm.
+   2. Phân tích tần suất: Mỗi chuỗi con Cj được mã hóa bằng một phép mã hóa Caesar với khóa dịch chuyển kj (ký tự thứ j của từ khóa).
+   3. Tìm khóa từng ký tự: Dùng phương pháp phân tích tần suất cổ điển (ví dụ: tìm ký tự phổ biến nhất trong Cj và giả định nó tương ứng với ký tự phổ biến nhất trong bản rõ, như 'E' → kj) để tìm ra ký tự khóa kj cho từng chuỗi con.
+      
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
 mã hoá:
