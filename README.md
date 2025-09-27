@@ -139,7 +139,12 @@ a⋅a −1 ≡1(modm)
 ###### 4.1
 ###### Mật mã Vigenère là một phương pháp mã hóa thay thế đa bảng chữ (polyalphabetic substitution cipher) cổ điển, mạnh hơn đáng kể so với các mã hóa đơn bảng chữ như Caesar hay Affine vì nó làm lu mờ sự phân bố tần suất ký tự của bản rõ.
 
-###### 4.2 Thuật toán mã hoá:
+###### 4.2 Thuật toán:
+###### Khóa K là một từ khóa (keyword) có độ dài m. Khóa này được lặp lại để có độ dài bằng bản rõ P.
+ - P=p1*p2*...*pn (bản rõ)
+ - K=k1*k2*...*kn (từ khóa)
+ - K(lặp)=k1*k2...km*km+1...kn (Khóa được lặp lại, với ki=ki mod m)
+###### Thuật toán mã hoá:
 ###### Công thức: 
 ###### Thuật toán giải mã:
 ###### Công thức:
