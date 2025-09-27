@@ -157,7 +157,7 @@ tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax 
  Không gian khóa = Lmax ∑ (m=1) 26^m
 
 ##### 4.4 Cách phá mã:
-
+ - Bước 1: Xác định độ dài Khóa (m)
 
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
