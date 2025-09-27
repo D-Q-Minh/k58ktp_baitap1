@@ -115,10 +115,14 @@ a⋅a −1 ≡1(modm)
 
 #################################################################################
 ###### 3.3 Không gian khoá:
-###### Khóa K là một từ khóa (keyword) hoặc một dãy số, xác định thứ tự sắp xếp các cột.
-######
+###### Khóa là một hoán vị của các số cột. Với một từ khóa có độ dài n (tức là n cột), số lượng khóa (hoán vị) có thể là n! (n giai thừa).
 
 ###### 3.4 Cách phá mã:
+###### Tấn công Vét cạn (Brute-Force Attack) dựa trên việc phỏng đoán độ dài khóa (số cột):
+###### - Phỏng đoán độ dài khóa (n): Kẻ tấn công thử các độ dài khóa khác nhau (ví dụ: n=3,4,5,…).
+###### - Tạo ma trận: Với mỗi độ dài khóa n, kẻ tấn công sắp xếp bản mã thành một ma trận n cột.
+###### - Kiểm tra tất cả hoán vị cột: Đối với mỗi ma trận n cột, kẻ tấn công thử tất cả n! hoán vị cột để đọc bản rõ.
+###### - Phân tích Bigram/Trigram: Để kiểm tra xem bản rõ có hợp lý không, kẻ tấn công sử dụng Phân tích Tần suất Cặp Ký tự (Bigram) hoặc Bộ ba Ký tự (Trigram). Bản rõ hợp lệ sẽ có tần suất bigram và trigram khớp với thống kê của ngôn ngữ đó (ví dụ: trong tiếng Anh, bigram "TH" và "EN" xuất hiện thường xuyên).
 
 ###### 3.5 Thuật toán mã hoá và giải mã
 ###### C++:
