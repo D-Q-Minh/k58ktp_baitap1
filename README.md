@@ -146,7 +146,9 @@ a⋅a −1 ≡1(modm)
  - K(lặp)=k1*k2...km*km+1...kn (Khóa được lặp lại, với ki=ki mod m)
 
 ###### Thuật toán mã hoá:
-###### Công thức: 
+Ký tự bản rõ pi (giá trị số) được mã hóa thành ký tự bản mã ci (giá trị số) bằng cách cộng giá trị của nó với ký tự khóa tương ứng ki theo modulo 26.
+Công thức: ci=E(pi,ki)=(pi+ki) mod 26
+
 ###### Thuật toán giải mã:
 ###### Công thức:
 
