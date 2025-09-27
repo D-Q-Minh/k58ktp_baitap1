@@ -191,11 +191,27 @@ giải mã:
 ##### 5.1
 Mã hóa Playfair là mật mã thay thế đa ký tự (polygraphic substitution cipher) đầu tiên, mã hóa các cặp ký tự (digraphs) thay vì các ký tự đơn lẻ.
 ##### 5.2 Thuật toán
+Mã Playfair dựa trên một Khối Khóa (Key Square) 5×5.
 
+ 1. Chuẩn bị Khối Khóa (Key Square):
+    - Chọn khóa: Chọn một từ khóa
+    - Xây dựng lưới 5x5: Điền các ký tự duy nhất của từ khóa vào lưới 5×5 từ trái sang phải, từ trên xuống dưới.
+    - Hoàn thành lưới: Điền các ký tự còn lại của bảng chữ cái tiếng Anh theo thứ tự (thường bỏ qua chữ J hoặc xem I và J là một) để chỉ còn 25 ký tự.
+ 2. Chuẩn bị Bản rõ:
+    - Tách cặp: Chia bản rõ thành các cặp ký tự (digraphs).
+    - Xử lý chữ kép: Nếu một cặp có hai ký tự giống nhau (ví dụ: LL), chèn một ký tự đệm (thường là X hoặc Z) vào giữa và tạo thành cặp mới (ví dụ: LX LO).
+    - Xử lý ký tự lẻ: Nếu bản rõ có số lượng ký tự lẻ, thêm một ký tự đệm vào cuối (ví dụ: A → AZ).
+    - Gộp I/J: Thay thế tất cả J bằng I.
 ##### Thuật toán mã hoá:
-Công thức: 
+ Với từng cặp ký tự (p1,p2) trong lưới khóa:
+    - Cùng Hàng: Nếu p1 và p2 nằm trên cùng một hàng, thay thế mỗi ký tự bằng ký tự ngay bên phải nó trong hàng (cuộn về đầu hàng nếu ở cuối).
+    - Cùng Cột: Nếu p1 và p2 nằm trên cùng một cột, thay thế mỗi ký tự bằng ký tự ngay bên dưới nó trong cột (cuộn về đầu cột nếu ở cuối).
+    - Tạo Hình Chữ Nhật (Khác Hàng, Khác Cột): Thay thế mỗi ký tự bằng ký tự nằm ở góc còn lại của hình chữ nhật, nằm trên cùng hàng với ký tự gốc.
+      
 ##### Thuật toán giải mã:
-Công thức:
+ - Cùng Hàng: Thay thế mỗi ký tự bằng ký tự ngay bên trái nó.
+ - Cùng Cột: Thay thế mỗi ký tự bằng ký tự ngay bên trên nó.
+ - Tạo Hình Chữ Nhật: Quy tắc này là tương tự trong mã hóa và giải mã (chỉ hoán đổi các góc đối diện theo hàng).
 
 ##### 5.3 Không gian khoá:
 
