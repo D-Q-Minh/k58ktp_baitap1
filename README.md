@@ -18,10 +18,8 @@ Với mỗi phương pháp, hãy tìm hiểu:
 
 #### Bài làm:
 #### 1. Caesar
-#####
-1.1 Tên gọi: Phương pháp này được đặt tên theo hoàng đế Julius Caesar, người đã sử dụng nó để gửi thư tín.
-#####
-1.2 Thuật toán mã hoá: thay thế mỗi chữ cái trong văn bản gốc bằng một chữ cái khác cách nó một số vị trí cố định trong bảng chữ cái. 
+##### 1.1 Tên gọi: Phương pháp này được đặt tên theo hoàng đế Julius Caesar, người đã sử dụng nó để gửi thư tín.
+##### 1.2 Thuật toán mã hoá: thay thế mỗi chữ cái trong văn bản gốc bằng một chữ cái khác cách nó một số vị trí cố định trong bảng chữ cái. 
 ######
  Công thức: Ci = (Pi + ki mod m) mod 26
  - Ci: Ký tự mã hóa ở vị trí thứ i trong văn bản mã hóa.)
@@ -30,7 +28,8 @@ Với mỗi phương pháp, hãy tìm hiểu:
  - m: Một giá trị hằng số (thường là kích thước của bảng mã hoặc tập hợp các ký tự có thể được mã hóa).
  - mod26 đảm bảo kết quả luôn nằm trong phạm vi từ 0 đến 25 (vì bảng chữ cái tiếng Anh có 26 chữ cái).
 
-###### Thuật toán giải mã:
+######
+Thuật toán giải mã:
 Công thức: Pi = (Ci - ki mod m) mod 26
 ######
 
