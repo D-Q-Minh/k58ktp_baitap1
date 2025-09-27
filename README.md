@@ -147,12 +147,17 @@ Khóa K là một từ khóa (keyword) có độ dài m. Khóa này được l�
 Ký tự bản rõ pi (giá trị số) được mã hóa thành ký tự bản mã ci (giá trị số) bằng cách cộng giá trị của nó với ký tự khóa tương ứng ki theo modulo 26.
 Công thức: ci=E(pi,ki)=(pi+ki) mod 26
 
-###### Thuật toán giải mã:
-###### Công thức:
+##### Thuật toán giải mã:
+Ký tự bản mã ci (giá trị số) được giải mã thành ký tự bản rõ pi (giá trị số) bằng cách trừ giá trị của nó với ký tự khóa tương ứng ki theo modulo 26
+Công thức: pi=D(ci,ki)=(ci−ki) mod26
 
-###### 4.3 Không gian khoá:
+##### 4.3 Không gian khoá:
+Không gian khóa của mã Vigenère phụ thuộc vào độ dài tối đa của từ khóa được cho phép (Lmax).
+tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax được tạo từ bảng chữ cái 26 ký tự:
+ Không gian khóa = Lmax ∑ (m=1) 26^m
 
-###### 4.4 Cách phá mã:
+##### 4.4 Cách phá mã:
+
 
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
