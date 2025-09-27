@@ -176,6 +176,7 @@ tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax 
    1. Tách chuỗi con: Chia bản mã thành m chuỗi con C1,C2,…,Cm.
    2. Phân tích tần suất: Mỗi chuỗi con Cj được mã hóa bằng một phép mã hóa Caesar với khóa dịch chuyển kj (ký tự thứ j của từ khóa).
    3. Tìm khóa từng ký tự: Dùng phương pháp phân tích tần suất cổ điển (ví dụ: tìm ký tự phổ biến nhất trong Cj và giả định nó tương ứng với ký tự phổ biến nhất trong bản rõ, như 'E' → kj) để tìm ra ký tự khóa kj cho từng chuỗi con.
+      Thực hiện tất cả m chuỗi con, sẽ tìm được từ khóa hoàn chỉnh K=k1k2…km.
       
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
@@ -188,7 +189,10 @@ giải mã:
 
 #### 5. Playfair
 ##### 5.1
-##### 5.2 Thuật toán mã hoá:
+Mã hóa Playfair là mật mã thay thế đa ký tự (polygraphic substitution cipher) đầu tiên, mã hóa các cặp ký tự (digraphs) thay vì các ký tự đơn lẻ.
+##### 5.2 Thuật toán
+
+##### Thuật toán mã hoá:
 Công thức: 
 ##### Thuật toán giải mã:
 Công thức:
