@@ -101,6 +101,8 @@ a⋅a −1 ≡1(modm)
 
 #### 3. Hoán vị
 ###### 3.1
+###### Phương pháp mã hoá Hoán vị (Transposition Cipher) là một kỹ thuật mã hoá cổ điển, trong đó các ký tự của bản rõ được giữ nguyên mà chỉ thay đổi vị trí của chúng theo một quy tắc nhất định để tạo thành bản mã.
+
 ###### 3.2 Thuật toán mã hoá:
 ###### Công thức: 
 ###### - Viết bản rõ: Viết bản rõ (plaintext) thành các hàng trong một ma trận, với số cột bằng độ dài của từ khóa.
@@ -135,10 +137,13 @@ a⋅a −1 ≡1(modm)
 
 #### 4. Vigenère
 ###### 4.1
+###### Mật mã Vigenère là một phương pháp mã hóa thay thế đa bảng chữ (polyalphabetic substitution cipher) cổ điển, mạnh hơn đáng kể so với các mã hóa đơn bảng chữ như Caesar hay Affine vì nó làm lu mờ sự phân bố tần suất ký tự của bản rõ.
+
 ###### 4.2 Thuật toán mã hoá:
 ###### Công thức: 
 ###### Thuật toán giải mã:
 ###### Công thức:
+
 ###### 4.3 Không gian khoá:
 
 ###### 4.4 Cách phá mã:
