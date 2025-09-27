@@ -158,6 +158,18 @@ tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax 
 
 ##### 4.4 Cách phá mã:
  - Bước 1: Xác định độ dài Khóa (m)
+ 2 phương pháp chính:
+  Phương pháp Kasiski:
+  + Tìm sự lặp lại: Tìm các đoạn ký tự dài (3-4 ký tự) xuất hiện lặp lại trong bản mã.
+  + Tính khoảng cách: Tính khoảng cách giữa các lần xuất hiện của các đoạn lặp lại này.
+  + Tìm Ước chung lớn nhất (GCD): Độ dài khóa m có khả năng là ước số chung lớn nhất (hoặc ước số của GCD) của các khoảng cách này.
+  Phương pháp Chỉ số Trùng hợp (Index of Coincidence - IoC):
+  + IoC là một giá trị đo lường xác suất hai ký tự được chọn ngẫu nhiên trong một đoạn văn bản sẽ trùng nhau.
+  + Thử độ dài: Thử từng độ dài khóa m=1,2,3,…
+  + Tính IoC: Với một độ dài khóa m giả định, ta chia bản mã thành m chuỗi con. Mỗi chuỗi con là một mã Caesar đơn giản.
+  + So sánh: Tính IoC cho mỗi chuỗi con đó.
+     Nếu IoC của các chuỗi con gần với IoC của ngôn ngữ bản rõ (ví dụ: IoC tiếng Anh ≈0.067), thì độ dài m đó có khả năng là độ dài khóa chính xác.
+     Nếu IoC gần với IoC của phân bố đồng nhất (≈0.038), thì độ dài m là không chính xác.
 
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
