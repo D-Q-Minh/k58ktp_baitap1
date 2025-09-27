@@ -28,44 +28,42 @@ Với mỗi phương pháp, hãy tìm hiểu:
  - m: Một giá trị hằng số (thường là kích thước của bảng mã hoặc tập hợp các ký tự có thể được mã hóa).
  - mod26 đảm bảo kết quả luôn nằm trong phạm vi từ 0 đến 25 (vì bảng chữ cái tiếng Anh có 26 chữ cái).
 
-######
 Thuật toán giải mã:
 Công thức: Pi = (Ci - ki mod m) mod 26
-######
 
-###### 1.3 Không gian khoá: 26 chữ cái, chỉ có 25 khóa dịch chuyển khả thi (khóa 26 tương đương khóa 0, không mã hóa).
+##### 1.3 Không gian khoá: 26 chữ cái, chỉ có 25 khóa dịch chuyển khả thi (khóa 26 tương đương khóa 0, không mã hóa).
 
-###### 1.4 Cách phá mã: 
-###### - tấn công vét cạn (Brute Force Attack): Kẻ tấn công có thể dễ dàng thử lần lượt tất cả 25 khóa có thể xảy ra và chọn kết quả giải mã có nghĩa
-###### - Phân tích tần suất (Frequency Analysis): Vì mỗi chữ cái luôn được mã hóa thành cùng một chữ cái mã hóa, kẻ tấn công có thể phân tích tần suất xuất hiện của các chữ cái trong bản mã để suy ra khóa.
+##### 1.4 Cách phá mã: 
+ - tấn công vét cạn (Brute Force Attack): Kẻ tấn công có thể dễ dàng thử lần lượt tất cả 25 khóa có thể xảy ra và chọn kết quả giải mã có nghĩa
+ - Phân tích tần suất (Frequency Analysis): Vì mỗi chữ cái luôn được mã hóa thành cùng một chữ cái mã hóa, kẻ tấn công có thể phân tích tần suất xuất hiện của các chữ cái trong bản mã để suy ra khóa.
 
-###### 1.5 Thuật toán mã hoá và giải mã
-###### C++:
-###### mã hoá:
-###### giải mã:
+##### 1.5 Thuật toán mã hoá và giải mã
+##### C++:
+mã hoá:
+giải mã:
 
-###### html+css+javascript:
-###### mã hoá:
-###### giải mã:
+##### html+css+javascript:
+mã hoá:
+giải mã:
 
 #### 2. Affine
-###### 2.1
-###### 2.2 Thuật toán mã hoá:
-###### Công thức: y=E(x)=(a*x+b)modm
-###### x: Giá trị số của chữ cái bản rõ.
-###### y: Giá trị số của chữ cái bản mã.
-###### a,b: Các thành phần của khóa.
-###### m: Kích thước bảng chữ cái (26).
+##### 2.1
+##### 2.2 Thuật toán mã hoá:
+Công thức: y=E(x)=(a*x+b)modm
+ - x: Giá trị số của chữ cái bản rõ.
+ - y: Giá trị số của chữ cái bản mã.
+ - a,b: Các thành phần của khóa.
+ - m: Kích thước bảng chữ cái (26).
 
-###### Thuật toán giải mã:
-###### Công thức: x=D(y)=a^−1*(y−b)modm
+##### Thuật toán giải mã:
+Công thức: x=D(y)=a^−1*(y−b)modm
 ###### a ^−1 (a inverse) là nghịch đảo nhân mô-đun của a(modm), tức là số thỏa mãn điều kiện:
-
 a⋅a −1 ≡1(modm)
-###### 2.3 Không gian khoá:
-###### Khóa K là một cặp số nguyên K=(a,b), thỏa mãn các điều kiện:
-###### a và m (kích thước bảng chữ cái, m=26 đối với bảng chữ cái tiếng Anh) phải là hai số nguyên tố cùng nhau, tức là ƯCLN(a,m)=1.
-###### b là số nguyên bất kỳ, thường được chọn trong khoảng 0≤b<m.
+
+##### 2.3 Không gian khoá:
+Khóa K là một cặp số nguyên K=(a,b), thỏa mãn các điều kiện:
+a và m (kích thước bảng chữ cái, m=26 đối với bảng chữ cái tiếng Anh) phải là hai số nguyên tố cùng nhau, tức là ƯCLN(a,m)=1.
+b là số nguyên bất kỳ, thường được chọn trong khoảng 0≤b<m.
 
 ###### Không gian khóa là tổng số các khóa hợp lệ K=(a,b). Với m=26:
 ###### Giá trị a hợp lệ: Các số nguyên tố cùng nhau với 26 và nhỏ hơn 26. Đó là {1,3,5,7,9,11,15,17,19,21,23,25}. Có tổng cộng 12 giá trị a hợp lệ.
@@ -91,61 +89,61 @@ a⋅a −1 ≡1(modm)
 ###### + Kiểm tra: Nếu khóa (a,b) tìm được thỏa mãn ƯCLN(a,26)=1, ta dùng nó để giải mã toàn bộ bản mã. Nếu bản rõ thu được có ý nghĩa, khóa đã tìm được là chính xác.
 
 ###### 2.5 Thuật toán mã hoá và giải mã
-###### C++:
-###### mã hoá:
-###### giải mã:
+##### C++:
+mã hoá:
+giải mã:
 
-###### html+css+javascript:
-###### mã hoá:
-###### giải mã:
+##### html+css+javascript:
+mã hoá:
+giải mã:
 
 #### 3. Hoán vị
 ###### 3.1
 ###### Phương pháp mã hoá Hoán vị (Transposition Cipher) là một kỹ thuật mã hoá cổ điển, trong đó các ký tự của bản rõ được giữ nguyên mà chỉ thay đổi vị trí của chúng theo một quy tắc nhất định để tạo thành bản mã.
 
-###### 3.2 Thuật toán mã hoá:
-###### Công thức: 
-###### - Viết bản rõ: Viết bản rõ (plaintext) thành các hàng trong một ma trận, với số cột bằng độ dài của từ khóa.
-###### - Sắp xếp cột: Ghi từ khóa lên trên các cột.
-###### - Đọc bản mã: Đọc các ký tự theo cột, theo thứ tự số thứ tự của từ khóa (từ nhỏ đến lớn).
+##### 3.2 Thuật toán:
+##### Thuật toán mã hoá:
+Công thức: 
+ - Viết bản rõ: Viết bản rõ (plaintext) thành các hàng trong một ma trận, với số cột bằng độ dài của từ khóa.
+ - Sắp xếp cột: Ghi từ khóa lên trên các cột.
+ - Đọc bản mã: Đọc các ký tự theo cột, theo thứ tự số thứ tự của từ khóa (từ nhỏ đến lớn).
 
-###### Thuật toán giải mã:
-###### Công thức:
-###### Xác định kích thước ma trận: Tính số hàng của ma trận bằng cách chia độ dài bản mã cho độ dài khóa (L/len(K)).
-###### Viết bản mã: Viết bản mã vào ma trận theo cột, theo đúng thứ tự đã đọc (từ 1 đến n).
-###### Đọc bản rõ: Đọc lại các ký tự theo hàng (từ trái qua phải, từ trên xuống dưới) theo thứ tự cột ban đầu để khôi phục bản rõ.
+##### Thuật toán giải mã:
+Công thức:
+ - Xác định kích thước ma trận: Tính số hàng của ma trận bằng cách chia độ dài bản mã cho độ dài khóa (L/len(K)).
+ - Viết bản mã: Viết bản mã vào ma trận theo cột, theo đúng thứ tự đã đọc (từ 1 đến n).
+ - Đọc bản rõ: Đọc lại các ký tự theo hàng (từ trái qua phải, từ trên xuống dưới) theo thứ tự cột ban đầu để khôi phục bản rõ.
 
-#################################################################################
-###### 3.3 Không gian khoá:
-###### Khóa là một hoán vị của các số cột. Với một từ khóa có độ dài n (tức là n cột), số lượng khóa (hoán vị) có thể là n! (n giai thừa).
+##### 3.3 Không gian khoá:
+Khóa là một hoán vị của các số cột. Với một từ khóa có độ dài n (tức là n cột), số lượng khóa (hoán vị) có thể là n! (n giai thừa).
 
-###### 3.4 Cách phá mã:
-###### Tấn công Vét cạn (Brute-Force Attack) dựa trên việc phỏng đoán độ dài khóa (số cột):
-###### - Phỏng đoán độ dài khóa (n): Kẻ tấn công thử các độ dài khóa khác nhau (ví dụ: n=3,4,5,…).
-###### - Tạo ma trận: Với mỗi độ dài khóa n, kẻ tấn công sắp xếp bản mã thành một ma trận n cột.
-###### - Kiểm tra tất cả hoán vị cột: Đối với mỗi ma trận n cột, kẻ tấn công thử tất cả n! hoán vị cột để đọc bản rõ.
-###### - Phân tích Bigram/Trigram: Để kiểm tra xem bản rõ có hợp lý không, kẻ tấn công sử dụng Phân tích Tần suất Cặp Ký tự (Bigram) hoặc Bộ ba Ký tự (Trigram). Bản rõ hợp lệ sẽ có tần suất bigram và trigram khớp với thống kê của ngôn ngữ đó (ví dụ: trong tiếng Anh, bigram "TH" và "EN" xuất hiện thường xuyên).
+##### 3.4 Cách phá mã:
+##### Tấn công Vét cạn (Brute-Force Attack) dựa trên việc phỏng đoán độ dài khóa (số cột):
+ - Phỏng đoán độ dài khóa (n): Kẻ tấn công thử các độ dài khóa khác nhau (ví dụ: n=3,4,5,…).
+ - Tạo ma trận: Với mỗi độ dài khóa n, kẻ tấn công sắp xếp bản mã thành một ma trận n cột.
+ - Kiểm tra tất cả hoán vị cột: Đối với mỗi ma trận n cột, kẻ tấn công thử tất cả n! hoán vị cột để đọc bản rõ.
+ - Phân tích Bigram/Trigram: Để kiểm tra xem bản rõ có hợp lý không, kẻ tấn công sử dụng Phân tích Tần suất Cặp Ký tự (Bigram) hoặc Bộ ba Ký tự (Trigram). Bản rõ hợp lệ sẽ có tần suất bigram và trigram khớp với thống kê của ngôn ngữ đó (ví dụ: trong tiếng Anh, bigram "TH" và "EN" xuất hiện thường xuyên).
 
-###### 3.5 Thuật toán mã hoá và giải mã
-###### C++:
-###### mã hoá:
-###### giải mã:
+##### 3.5 Thuật toán mã hoá và giải mã
+##### C++:
+mã hoá:
+giải mã:
 
-###### html+css+javascript:
-###### mã hoá:
-###### giải mã:
+##### html+css+javascript:
+mã hoá:
+giải mã:
 
 #### 4. Vigenère
-###### 4.1
-###### Mật mã Vigenère là một phương pháp mã hóa thay thế đa bảng chữ (polyalphabetic substitution cipher) cổ điển, mạnh hơn đáng kể so với các mã hóa đơn bảng chữ như Caesar hay Affine vì nó làm lu mờ sự phân bố tần suất ký tự của bản rõ.
+##### 4.1
+Mật mã Vigenère là một phương pháp mã hóa thay thế đa bảng chữ (polyalphabetic substitution cipher) cổ điển, mạnh hơn đáng kể so với các mã hóa đơn bảng chữ như Caesar hay Affine vì nó làm lu mờ sự phân bố tần suất ký tự của bản rõ.
 
-###### 4.2 Thuật toán:
-###### Khóa K là một từ khóa (keyword) có độ dài m. Khóa này được lặp lại để có độ dài bằng bản rõ P.
+##### 4.2 Thuật toán:
+Khóa K là một từ khóa (keyword) có độ dài m. Khóa này được lặp lại để có độ dài bằng bản rõ P.
  - P=p1*p2*...*pn (bản rõ)
  - K=k1*k2*...*kn (từ khóa)
  - K(lặp)=k1*k2...km*km+1...kn (Khóa được lặp lại, với ki=ki mod m)
 
-###### Thuật toán mã hoá:
+##### Thuật toán mã hoá:
 Ký tự bản rõ pi (giá trị số) được mã hóa thành ký tự bản mã ci (giá trị số) bằng cách cộng giá trị của nó với ký tự khóa tương ứng ki theo modulo 26.
 Công thức: ci=E(pi,ki)=(pi+ki) mod 26
 
@@ -157,30 +155,30 @@ Công thức: ci=E(pi,ki)=(pi+ki) mod 26
 ###### 4.4 Cách phá mã:
 
 ###### 4.5 Thuật toán mã hoá và giải mã
-###### C++:
-###### mã hoá:
-###### giải mã:
+##### C++:
+mã hoá:
+giải mã:
 
-###### html+css+javascript:
-###### mã hoá:
-###### giải mã:
+##### html+css+javascript:
+mã hoá:
+giải mã:
 
 #### 5. Playfair
-###### 5.1
-###### 5.2 Thuật toán mã hoá:
-###### Công thức: 
-###### Thuật toán giải mã:
-###### Công thức:
-###### 5.3 Không gian khoá:
+##### 5.1
+##### 5.2 Thuật toán mã hoá:
+Công thức: 
+##### Thuật toán giải mã:
+Công thức:
 
-###### 5.4 Cách phá mã:
+##### 5.3 Không gian khoá:
 
-###### 5.5 Thuật toán mã hoá và giải mã
-###### C++:
-###### mã hoá:
-###### giải mã:
+##### 5.4 Cách phá mã:
 
-###### html+css+javascript:
-###### mã hoá:
-###### giải mã:
+##### 5.5 Thuật toán mã hoá và giải mã
+##### C++:
+mã hoá:
+giải mã:
 
+##### html+css+javascript:
+mã hoá:
+giải mã:
