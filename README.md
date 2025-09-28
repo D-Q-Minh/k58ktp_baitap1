@@ -103,8 +103,7 @@ int main(){
 ```
 
 ##### html+css+javascript:
-mã hoá:
-giải mã:
+
 
 #### 2. Affine
 ##### 2.1
