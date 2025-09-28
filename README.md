@@ -39,7 +39,7 @@ Công thức: Pi = (Ci - ki mod m) mod 26
 
 ##### 1.5 Thuật toán mã hoá và giải mã
 ##### C++:
-'''c++
+```c++
 #include<iostream>
 #include<string>
 
@@ -100,7 +100,7 @@ int main(){
 	string decrypt_text=decryptcaesar(text, key);
 	cout<<"ban giai ma: "<<decrypt_text<<endl;
 }
-'''
+```
 
 ##### html+css+javascript:
 mã hoá:
