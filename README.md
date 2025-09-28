@@ -1,4 +1,4 @@
-<img width="273" height="124" alt="6" src="https://github.com/user-attachments/assets/03b08288-cde1-4de7-8647-269194576332" />##### Sinh viên: Dương Quang Minh
+##### Sinh viên: Dương Quang Minh
 MSSS: K225480106047
 ### Bài tập môn: an toàn và bảo mật thông tin
 ### Bài 1:
