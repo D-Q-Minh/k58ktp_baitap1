@@ -1,4 +1,5 @@
-# k58ktp_baitap1
+##### Sinh viên: Dương Quang Minh
+MSSS: K225480106047
 ### Bài tập môn: an toàn và bảo mật thông tin
 ### Bài 1:
 #### TÌM HIỂU CÁC PHƯƠNG PHÁP MÃ HOÁ CỔ ĐIỂN
