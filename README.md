@@ -87,12 +87,8 @@ b là số nguyên bất kỳ, thường được chọn trong khoảng 0≤b<m.
 
 ###### 2.5 Thuật toán mã hoá và giải mã
 ##### C++:
-mã hoá:
-giải mã:
 
 ##### html+css+javascript:
-mã hoá:
-giải mã:
 
 #### 3. Hoán vị
 ###### 3.1
@@ -123,12 +119,8 @@ Khóa là một hoán vị của các số cột. Với một từ khóa có đ�
 
 ##### 3.5 Thuật toán mã hoá và giải mã
 ##### C++:
-mã hoá:
-giải mã:
 
 ##### html+css+javascript:
-mã hoá:
-giải mã:
 
 #### 4. Vigenère
 ##### 4.1
@@ -177,12 +169,8 @@ tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax 
       
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
-mã hoá:
-giải mã:
 
 ##### html+css+javascript:
-mã hoá:
-giải mã:
 
 #### 5. Playfair
 ##### 5.1
@@ -225,9 +213,5 @@ Khóa của mã Playfair là hoán vị của 25 ký tự (do I và J được g
 
 ##### 5.5 Thuật toán mã hoá và giải mã
 ##### C++:
-mã hoá:
-giải mã:
 
 ##### html+css+javascript:
-mã hoá:
-giải mã:
