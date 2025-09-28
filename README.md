@@ -1,4 +1,4 @@
-##### Sinh viên: Dương Quang Minh
+<img width="273" height="124" alt="6" src="https://github.com/user-attachments/assets/03b08288-cde1-4de7-8647-269194576332" />##### Sinh viên: Dương Quang Minh
 MSSS: K225480106047
 ### Bài tập môn: an toàn và bảo mật thông tin
 ### Bài 1:
@@ -44,6 +44,8 @@ Công thức: Pi = (Ci - ki mod m) mod 26
 <img width="296" height="86" alt="2" src="https://github.com/user-attachments/assets/f88722ec-6437-485c-86f2-f083a2eeb197" />
 
 ##### html+css+javascript:
+<img width="397" height="288" alt="3" src="https://github.com/user-attachments/assets/d48940bd-a3ea-402e-a565-26e744423afc" />
+<img width="352" height="290" alt="4" src="https://github.com/user-attachments/assets/833bc7f4-6a58-4907-a606-f2c3134b25c2" />
 
 #### 2. Affine
 ##### 2.1
@@ -89,8 +91,12 @@ b là số nguyên bất kỳ, thường được chọn trong khoảng 0≤b<m.
 
 ###### 2.5 Thuật toán mã hoá và giải mã
 ##### C++:
+<img width="263" height="123" alt="5" src="https://github.com/user-attachments/assets/e518dd69-2150-4f26-b0a2-08da1f711476" />
+<img width="273" height="124" alt="6" src="https://github.com/user-attachments/assets/9f92bd93-b248-49b5-a30d-2329b8192841" />
 
 ##### html+css+javascript:
+<img width="569" height="547" alt="7" src="https://github.com/user-attachments/assets/bfaad7e0-e86b-496d-97b0-a2e0f49ae3cb" />
+<img width="474" height="526" alt="8" src="https://github.com/user-attachments/assets/db15db15-de24-433f-9ea5-b895fc655d0c" />
 
 #### 3. Hoán vị
 ###### 3.1
@@ -121,8 +127,12 @@ Khóa là một hoán vị của các số cột. Với một từ khóa có đ�
 
 ##### 3.5 Thuật toán mã hoá và giải mã
 ##### C++:
+<img width="249" height="73" alt="image" src="https://github.com/user-attachments/assets/ba49af8b-5383-4461-ac3b-8a326ce38a19" />
+<img width="249" height="73" alt="10" src="https://github.com/user-attachments/assets/8b24156f-ce1e-4ad4-9c69-186d54496765" />
 
 ##### html+css+javascript:
+<img width="334" height="303" alt="11" src="https://github.com/user-attachments/assets/c1512663-7091-4dac-b5f9-6cdf34175d7a" />
+<img width="326" height="298" alt="12" src="https://github.com/user-attachments/assets/fbdd91a5-be8b-40ba-a446-121fc76c10c0" />
 
 #### 4. Vigenère
 ##### 4.1
@@ -171,8 +181,12 @@ tổng không gian khóa là tổng số từ có độ dài từ 1 đến Lmax 
       
 ###### 4.5 Thuật toán mã hoá và giải mã
 ##### C++:
+<img width="273" height="71" alt="13" src="https://github.com/user-attachments/assets/7985eb5e-a265-4505-8ea5-cb02f02c27c0" />
+<img width="269" height="70" alt="14" src="https://github.com/user-attachments/assets/793feb5e-9b7a-4922-8f07-f1e34ad1d1b0" />
 
 ##### html+css+javascript:
+<img width="290" height="263" alt="15" src="https://github.com/user-attachments/assets/c0a97372-452f-472d-a73b-83e605dee71f" />
+<img width="259" height="257" alt="16" src="https://github.com/user-attachments/assets/dbca4979-f741-488e-8957-86c656b9ba98" />
 
 #### 5. Playfair
 ##### 5.1
