@@ -39,6 +39,7 @@ Công thức: Pi = (Ci - ki mod m) mod 26
 
 ##### 1.5 Thuật toán mã hoá và giải mã
 ##### C++:
+
 '''
 #include<iostream>
 #include<string>
