@@ -214,8 +214,17 @@ Mã Playfair dựa trên một Khối Khóa (Key Square) 5×5.
  - Tạo Hình Chữ Nhật: Quy tắc này là tương tự trong mã hóa và giải mã (chỉ hoán đổi các góc đối diện theo hàng).
 
 ##### 5.3 Không gian khoá:
+Khóa của mã Playfair là hoán vị của 25 ký tự (do I và J được gộp).
+ - Số khóa lý thuyết là số hoán vị của 25 ký tự, tức là 25! (khoảng 1.55×10^25).
+ - Số khóa duy nhất: Do các phép quay hàng và cột của lưới có thể tạo ra các khóa tương đương về mặt mã hóa, số khóa duy nhất được ước tính là 25!/25≈6.2×10^23.
 
 ##### 5.4 Cách phá mã:
+ 1. Phân tích Tần suất Cặp Ký tự (Digraph Frequency Analysis):
+    - Có 25×25=625 cặp ký tự có thể xảy ra.
+    - Tính tần suất của 625 cặp ký tự trong bản mã và so sánh với tần suất các cặp ký tự phổ biến trong ngôn ngữ bản rõ.
+ 2. Điểm Yếu Cấu trúc (Structural Weaknesses):
+    - Tính đối xứng ngược: Nếu cặp bản rõ (p1,p2) mã hóa thành (c1,c2), thì cặp (p2,p1) sẽ mã hóa thành (c2,c1).
+    - Không thể có cặp trùng lặp: Mã Playfair không bao giờ tạo ra các cặp ký tự trùng lặp trong bản mã (ví dụ: AA, BB, CC). Điều này là do các quy tắc mã hóa (dịch phải/xuống, hoặc góc đối diện) không cho phép một ký tự được mã hóa thành chính nó nếu nó nằm ở vị trí thứ hai trong cặp.
 
 ##### 5.5 Thuật toán mã hoá và giải mã
 ##### C++:
