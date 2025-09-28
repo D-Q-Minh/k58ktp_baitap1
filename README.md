@@ -40,7 +40,8 @@ Công thức: Pi = (Ci - ki mod m) mod 26
 
 ##### 1.5 Thuật toán mã hoá và giải mã
 ##### C++:
-
+<img width="289" height="77" alt="1" src="https://github.com/user-attachments/assets/00613f70-1f71-4cd5-855d-b79e44efd69f" />
+<img width="296" height="86" alt="2" src="https://github.com/user-attachments/assets/f88722ec-6437-485c-86f2-f083a2eeb197" />
 ##### html+css+javascript:
 
 #### 2. Affine
