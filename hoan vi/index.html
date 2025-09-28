@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mã Hóa Hoán Vị Cột</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mã Hóa Hoán Vị Cột</h1>
+        <label for="plaintext">Văn bản:</label>
+        <textarea id="text-input" rows="5"></textarea><br>
+
+        <label for="key">Khóa (Chỉ chữ cái):</label>
+        <input type="text" id="key-input">
+
+        <div class="buttons">
+            <button onclick="encryptText()">Mã Hóa (Encrypt)</button>
+            <button onclick="decryptText()">Giải Mã (Decrypt)</button>
+        </div>
+
+        <label for="result">Kết Quả:</label>
+        <textarea id="result" rows="5" readonly></textarea>
+
+        <p id="error_message" class="errorMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

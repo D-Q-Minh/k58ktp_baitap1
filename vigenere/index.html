@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Mã Hóa Vigenere</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Mã Hóa Vigenere</h1>
+
+        <div class="input-group">
+            <label for="plaintext">Văn bản:</label>
+            <textarea id="text-input" rows="4" placeholder="Nhập văn bản tại đây..."></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="key">Khóa (Key):</label>
+            <input type="text" id="key" placeholder="Nhập khóa (chỉ chữ cái)">
+        </div>
+        <div class="buttons">
+                    <button onclick="processText('encrypt')">Mã Hóa (Encrypt)</button>
+					<button onclick="processText('decrypt')">Giải Mã (Decrypt)</button>
+                </div>
+
+        <div class="output-group">
+            <label for="result">Kết Quả:</label>
+            <textarea id="result-output" rows="4" readonly placeholder="Kết quả sẽ hiển thị ở đây..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

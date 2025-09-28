@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+<title>ma hoa caesar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+        <h1>Thuật Toán Caesar</h1>
+	<div class="input-group">
+            <label for="text-input">Văn bản (Gốc/Mã hóa):</label>
+            <textarea id="text-input" rows="5" placeholder="Nhập văn bản tại đây..."></textarea>
+        </div>
+	<div class="input-group">
+			<label for="key-input">Khoa key: </label>
+			<input type="number" id="key-input" value="1">
+		</div>
+	<div class="button-group">
+			<button onclick="processText('encrypt')">Mã Hóa (Encrypt)</button>
+            <button onclick="processText('decrypt')">Giải Mã (Decrypt)</button>
+		</div>
+	<div class="input-group">
+			<label for="result-output">ket qua: </label>
+			<textarea id="result-output" rows="5"></textarea>
+		</div>
+    </div>
+	
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</body>
